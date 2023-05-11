@@ -1,7 +1,7 @@
 const { createSign, createVerify } = require('node:crypto')
 const { privateKey, publicKey } = require('./keypair')
 
-const message = 'Acabou a criativadade 😢'
+const message = 'Simple message'
 
 const signer = createSign('rsa-sha256')
 signer.update(message)
