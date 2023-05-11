@@ -1,7 +1,7 @@
 const { publicEncrypt, privateDecrypt } = require('node:crypto')
 const { privateKey, publicKey } = require('./keypair')
 
-const message = 'Seloko truta bão demaisu esse modulo crypto'
+const message = 'Simple message'
 
 const encryptedData = publicEncrypt(publicKey, Buffer.from(message))
 const decryptedData = privateDecrypt(privateKey, encryptedData)
