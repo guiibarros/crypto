@@ -4,11 +4,11 @@ function hash(input) {
   return createHash('sha256').update(input).digest('hex')
 }
 
-let password = 'abacate'
+let password = 'Cherry'
 
 const hash1 = hash(password)
 
-password = 'abacate'
+password = 'Cherry'
 
 const hash2 = hash(password)
 
