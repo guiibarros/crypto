@@ -1,6 +1,6 @@
 const { createCipheriv, randomBytes, createDecipheriv } = require('node:crypto')
 
-const message = 'João roel a roupa do rei de roma!!! 💀'
+const message = 'Simple message'
 const key = randomBytes(32)
 const iv = randomBytes(16)
 
